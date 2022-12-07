@@ -1,47 +1,191 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depósito do Gaúcho</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Início</title>
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css.css">
 
 </head>
 <body>
-    
+   
 <!-- header section starts  -->
 
-<header class="cabecalho">
+<section class="header">
 
-<a href="#" class="logo"><img src="images/Logotcc.png" width="200" alt="">
+   <a href="Inicio.php" class="logo">Depósito do Gaúcho.</a>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./produtos.html">Produtos</a></li>
-        <li><a href="./grupo.html">Grupo</a></li>
-        <li><a href="">Proposito</a></li>
-        <li><a href="">Localização</a></li>
-    </ul>
-</nav>
+   <nav class="navbar">
+      <a href="Produtos.html">Produtos</a>
+      <a href="nós.html">Sobre nós</a>
+      <a href="login.html">login</a>
+   </nav>
 
-<div class="fas fa-bars"></div>
+   <div id="menu-btn" class="fas fa-bars"></div>
 
-</header>
+</section>
 
-<section class="home" id="home">
 
-<div class="content">
-    <h1>Depósito do Gaúcho </h1>
-    <p>O melhor deposito de Arraial do Cabo</p>
-    <a href="./produtos.html"><button class="btn">Produtos</button></a>    
-</div>
-<script src="js/main.js"></script>
+<section class="home">
+
+   <div class="home">
+
+
+         <div class="swiper-slide slide" style="background:url(imagens/praia.jpg) no-repeat">
+            <div class="content">  
+            </div>
+
+</section>
+
+<section class="Produtos">
+
+   <h1 class="heading-title"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>adventure</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>tour guide</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>trekking</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>camp fire</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>off road</h3>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>camping</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- home about section starts  -->
+
+<section class="home-about">
+
+   <div class="image">
+      <img src="images/about-img.jpg" alt="">
+   </div>
+
+   <div class="content">
+      <h3>about us</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
+      <a href="about.php" class="btn">read more</a>
+   </div>
+
+</section>
+
+<!-- home about section ends -->
+
+<!-- home packages section starts  -->
+
+<section class="home-produtos">
+
+   <h1 class="heading-title"> Produtos </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="imagens/cerveja.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Bebida Alcoolica</h3>
+            <p>Cerveja, Vodka, Whisky, Gin, Ice, Vinhos, entre outros.</p>
+            <a href="alcóolicos.html" class="btn">Clique aqui!</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="imagens/refri.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Refrigerantes</h3>
+            <p>Coca-cola, Fanta Uva, Fanta Laranja, entre outros</p>
+            <a href="refrigerante.html" class="btn">Clica aqui!</a>
+         </div>
+      </div>
+      
+      <div class="box">
+         <div class="image">
+            <img src="imagens/mercadinho.png" alt="">
+         </div>
+         <div class="content">
+            <h3>Entre outros</h3>
+            <p> água, suco, isotônico, entre outros.</p>
+            <a href="outros.html" class="btn">Clica aqui!</a>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home packages section ends -->
+
+<!-- home offer section starts  -->
+
+<section class="home-offer">
+   <div class="content">
+      <h3>Sobre nós</h3>
+      <p>Somos um depósito de bebidas localizado à 2km da Praia Grande em Arraial do Cabo desde 1972!
+         <br>
+            Funcionamos das 8h às 22h, seg-dom.
+         </br>
+      </p>
+      <a href="https://www.google.com/maps/place/Tv.+Arthur+Bernardes,+14+-+S%C3%ADtio,+Arraial+do+Cabo+-+RJ,+28930-000/@-22.9693211,-42.0299945,21z/data=!4m5!3m4!1s0x971970400a390b:0x92473729c844de39!8m2!3d-22.969348!4d-42.0299404" class="btn">Localização</a>
+   </div>
+</section>
+
+
+<section class="footer">
+
+
+      <div class="box">
+         <h3>Telefone para contato</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +55 (22) 9837-5497  </a> 
+      </div>
+
+   </div>
+
+   <div class="credit"><span>Depósito do Gaúcho.</span>
+   </div>
+
+</section>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

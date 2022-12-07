@@ -1,28 +1,60 @@
-<!doctype html>
-
-<html>
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <title>Depósito do Gaúcho</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>login</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css.css">
+
 </head>
 
 <body>
+    <section class="header">
+
+        <a href="Inicio.php" class="logo">Depósito do Gaúcho.</a>
+     
+        <nav class="navbar">
+           <a href="index.html">Início</a>
+           <a href="Produtos.html">Produtos</a>
+           <a href="nós.html">Sobre nós</a>
+        </nav>
+     
+        <div id="menu-btn" class="fas fa-bars"></div>
+     </section>
     <form>
         <div>
             <div><label>Email</label></div>
-            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="validacao()"/>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
         <div>
             <div><label>Senha</label></div>
-            <input type="password" name="senha" id="senha" placeholder="Senha" onchange="validacao()"/>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
         </div>
         <div>
-            <button type="button" class="solid" id="botao-login" disabled="true">Entrar</button>
+            <button type="button" class="clear" id="recover-password-button" disabled="true">Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="outline">Registrar</button>
         </div>
     </form>
 </body>
 
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="css.css">
 
-<script src="validacao.js"></script>
+<script src="index.js"></script>
 
 </html>
